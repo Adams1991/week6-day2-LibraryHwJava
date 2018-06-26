@@ -1,4 +1,7 @@
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class BorrowerTest {
 
@@ -10,6 +13,14 @@ public class BorrowerTest {
         borrower = new Borrower();
         book = new Book();
     }
+
+    @Test
+    public void canAddBook(){
+        borrower.addBook(book);
+        assertEquals(1, borrower.BookCount());
+    }
+
+
 
 
 
