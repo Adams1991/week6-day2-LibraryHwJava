@@ -30,4 +30,7 @@ public class Library {
         this.shelf.clear();
     }
 
+    public Book removeBook() {
+        return this.shelf.remove(0);
+    }
 }
