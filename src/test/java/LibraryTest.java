@@ -28,4 +28,23 @@ public class LibraryTest {
     public void canGetCapacity(){
         assertEquals(10, library.getCapacity());
     }
+
+    @Test
+    public void canEmptyShelf(){
+        library.addBook(book);
+        library.emptyShelf();
+        assertEquals(0, library.bookCount());
+    }
+
+    @Test
+    public void canReduceCapacity() {
+        library.reduceCapacity();
+        assertEquals(9, library.getCapacity());
+    }
+
+
+//    @Test
+//    public void returnIfCapacityIsZero(){
+//        assertEquals()
+//    }
 }

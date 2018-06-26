@@ -22,4 +22,12 @@ public class Library {
     public int getCapacity() {
         return capacity;
     }
+
+    public void emptyShelf() {
+        this.shelf.clear();
+    }
+
+    public void reduceCapacity() {
+        this.capacity -= 1;
+    }
 }
