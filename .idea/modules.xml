@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraryHwWeek6.iml" filepath="$PROJECT_DIR$/.idea/modules/libraryHwWeek6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraryHwWeek6_main.iml" filepath="$PROJECT_DIR$/.idea/modules/libraryHwWeek6_main.iml" group="libraryHwWeek6" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraryHwWeek6_test.iml" filepath="$PROJECT_DIR$/.idea/modules/libraryHwWeek6_test.iml" group="libraryHwWeek6" />
     </modules>
   </component>
 </project>
