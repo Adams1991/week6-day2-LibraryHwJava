@@ -9,8 +9,9 @@ public class LibraryTest {
     Book book;
 
     @Before
-    public void before(){
-        library = new Library(10);
+    public void before() {
+        library = new Library(1);
+        book = new Book();
     }
 
     @Test
@@ -19,32 +20,30 @@ public class LibraryTest {
     }
 
     @Test
-    public void canAddBook(){
+    public void canAddBook() {
         library.addBook(book);
         assertEquals(1, library.bookCount());
     }
 
     @Test
-    public void canGetCapacity(){
-        assertEquals(10, library.getCapacity());
+    public void canGetCapacity() {
+        assertEquals(1, library.getCapacity());
     }
 
     @Test
-    public void canEmptyShelf(){
+    public void canEmptyShelf() {
         library.addBook(book);
         library.emptyShelf();
         assertEquals(0, library.bookCount());
     }
 
     @Test
-    public void canReduceCapacity() {
-        library.reduceCapacity();
-        assertEquals(9, library.getCapacity());
+    public void cannotAddWhenFull(){
+        library.addBook(book);
+        library.addBook(book);
+        assertEquals(1, library.bookCount());
     }
 
-
-//    @Test
-//    public void returnIfCapacityIsZero(){
-//        assertEquals()
-//    }
 }
+
+

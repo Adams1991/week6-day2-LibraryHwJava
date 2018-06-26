@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class Library {
 
+
     private ArrayList<Book> shelf;
     private Integer capacity;
 
@@ -16,7 +17,9 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        this.shelf.add(book);
+        if(this.capacity > shelf.size()){
+            this.shelf.add(book);
+        }
     }
 
     public int getCapacity() {
@@ -27,7 +30,4 @@ public class Library {
         this.shelf.clear();
     }
 
-    public void reduceCapacity() {
-        this.capacity -= 1;
-    }
 }
